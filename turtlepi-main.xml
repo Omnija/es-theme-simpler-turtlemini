@@ -1,0 +1,170 @@
+<!--
+theme name:		simpler-turtlepi
+version:		1.2
+author:			Omnija
+license:		creative commons CC-BY-NC-SA
+-->
+
+<theme>
+    <formatVersion>3</formatVersion>
+
+	<view name="system">
+	
+		<image name="background" extra="true">
+		    <path>./assets/bground-menu.png</path>
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+		</image>
+	
+	</view>
+	
+    <view name="basic">
+	
+		<image name="background">
+			<path>./assets/bground-empty.png</path>
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+		</image> 
+		
+		<textlist name="gamelist">
+			<pos>0.300 0.205</pos>
+			<size>0.40 0.635</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>
+   
+	</view>
+	
+	<view name="detailed">
+	
+		<image name="background">
+			<path>./assets/bground-full.png</path>
+			<tile>false</tile>
+			<pos>0 0</pos>
+			<origin>0 0</origin>
+			<size>1 1</size>
+		</image>
+		
+		<image name="md_image">
+			<pos>0.752 0.38</pos>
+	   <!-- <size>0.135 0.301</size> -->
+			<maxSize>0.450 0.350</maxSize>
+			<origin>0.5 0.5</origin>
+		</image>
+		
+		<rating name="md_rating">
+			<filledPath>./assets/energy_filled.png</filledPath>
+			<unfilledPath>./assets/energy_empty.png</unfilledPath>
+			<pos>0.112 0.0740</pos>
+			<size>0.001 0.035</size>
+		</rating> 
+		
+		<textlist name="gamelist">
+			<pos>0.0670 0.210</pos>
+			<size>0.40 0.635</size>
+			<alignment>left</alignment>
+			<horizontalMargin>0.01</horizontalMargin>
+		</textlist>
+		
+		<text name="md_players">
+			<color>00F8F8</color>
+			<fontPath>./assets/font2.ttf</fontPath>
+			<fontSize>0.080</fontSize>
+			<alignment>center</alignment>
+			<size>0.14 0.04</size>
+			<pos>0.0 0.0705</pos>
+		</text>
+		
+		<text name="md_genre">
+			<fontPath>./assets/font2.ttf</fontPath>
+			<fontSize>0.049</fontSize>
+			<size>0.24 0.04</size>
+			<alignment>center</alignment>
+			<color>ffffff</color>
+			<pos>0.271 0.070</pos>
+		</text>
+		
+		<text name="md_description">
+			<fontPath>./assets/font.ttf</fontPath>
+			<fontSize>0.050</fontSize>
+			<size>0.425 0.215</size>
+			<alignment>center</alignment>
+			<lineSpacing>0.855</lineSpacing>
+			<color>ffffff</color>
+			<pos>0.545 0.650</pos>
+		</text>
+		
+	</view>
+	
+	<view name="system, basic, detailed">
+			
+		<image name="system_help" extra="true">
+			<!-- <path>./assets/system_help.png</path> -->
+			<path>./assets/system_help.png</path>
+			<size>1 0</size>
+			<pos>0 1</pos>
+			<origin>0 1</origin>
+		</image>
+	
+		<helpsystem name="help">
+			<textColor>ffffff</textColor>
+			<iconColor>ffffff</iconColor>
+			<fontPath>./assets/invisible.ttf</fontPath>
+			<pos>2 2</pos>
+			<fontSize>0.06666666666666</fontSize>
+		</helpsystem>
+
+	</view>
+
+    <view name="basic, detailed">
+	
+	<!--  md_lbl_players, md_players -->
+
+		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_developer, md_publisher, md_playcount, md_lbl_players">
+			<fontPath>./assets/invisible.ttf</fontPath>
+			<fontSize>0.01</fontSize>
+			<pos>1 1</pos>
+		</text>
+
+		<datetime name="md_releasedate, md_lastplayed">
+			<fontPath>./assets/invisible.ttf</fontPath>
+			<fontSize>0.01</fontSize>
+			<pos>1 1</pos>
+		</datetime>
+		
+		<!-- <rating name="md_rating">
+			<filledPath>./assets/invisible.png</filledPath>
+			<unfilledPath>./assets/invisible.png</unfilledPath>
+		</rating -->
+
+		<textlist name="gamelist">
+			<selectorColor>30D8F8</selectorColor>
+			<selectedColor>ffffff</selectedColor>
+			<primaryColor>ffffff</primaryColor>
+			<secondaryColor>ffffff</secondaryColor>
+			<fontPath>./assets/font.ttf</fontPath>
+			<fontSize>0.060</fontSize>
+			<scrollSound>./assets/select.wav</scrollSound>
+		</textlist> 	
+		
+		<image name="logo">
+			<pos>0.5 0.08</pos>
+			<origin>0.5 0.5</origin>
+			<maxSize>1 0.10</maxSize>
+		</image>
+		
+		<!-- <image name="turtle_overlay" extra="true">
+			<tile>false</tile>
+			<pos>0.965 0.95</pos>
+            <origin>0.5 0.5</origin>
+			<maxSize>0.1 0.1</maxSize>
+			<path>./assets/overlay-turtle.png</path>
+		</image> -->
+		
+	</view>
+	
+</theme>
